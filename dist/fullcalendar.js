@@ -6,15 +6,15 @@
 
 (function(factory) {
 	if (typeof define === 'function' && define.amd) {
-		define([ 'jquery', 'moment' ], factory);
+		define([ 'jquery' ], factory);
 	}
 	else if (typeof exports === 'object') { // Node/CommonJS
-		module.exports = factory(require('jquery'), require('moment'));
+		module.exports = factory(require('jquery'));
 	}
 	else {
-		factory(jQuery, moment);
+		factory(jQuery);
 	}
-})(function($, moment) {
+})(function($) {
 
 ;;
 
